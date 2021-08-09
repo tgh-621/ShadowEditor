@@ -14,7 +14,7 @@ import '../assets/js/controls/TransformControls';
 
 // geometries
 import '../assets/js/geometries/DecalGeometry.js';
-import '../assets/js/geometries/TeapotBufferGeometry.js';
+import '../assets/js/geometries/TeapotGeometry.js';
 
 // math
 import '../assets/js/math/SimplexNoise.js';
@@ -34,14 +34,15 @@ import '../assets/js/objects/Lensflare.js';
 // shaders
 import '../assets/js/shaders/FXAAShader.js';
 import '../assets/js/shaders/TerrainShader.js';
+import '../assets/js/shaders/MMDToonShader.js';
 
 // utils
 import '../assets/js/utils/BufferGeometryUtils.js';
 
-export { default as Cookies } from 'js-cookie';
-export { default as i18next } from 'i18next';
-export { default as Backend } from 'i18next-xhr-backend';
-export { default as classNames } from 'classnames/bind';
-export { default as PropTypes } from 'prop-types';
-export { default as TWEEN } from '@tweenjs/tween.js';
-export { dispatch } from 'd3-dispatch';
+export {default as Cookies} from 'js-cookie';
+export {default as i18next} from 'i18next';
+export {default as Backend} from 'i18next-xhr-backend';
+export {default as classNames} from 'classnames/bind';
+export {default as PropTypes} from 'prop-types';
+export {default as TWEEN} from '@tweenjs/tween.js';
+export {dispatch} from 'd3-dispatch';

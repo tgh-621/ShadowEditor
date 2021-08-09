@@ -130,9 +130,9 @@ func Add(w http.ResponseWriter, r *http.Request) {
 			entryFileName = fmt.Sprintf("%v/%v", savePath, info.Name())
 			meshType = Assimp
 			break
-		} else if strings.HasSuffix(strings.ToLower(info.Name()), ".bin") {
+		} else if strings.HasSuffix(strings.ToLower(info.Name()), ".gltf") {
 			entryFileName = fmt.Sprintf("%v/%v", savePath, info.Name())
-			meshType = Binary
+			meshType = Gltf
 			break
 		} else if strings.HasSuffix(strings.ToLower(info.Name()), ".json") {
 			entryFileName = fmt.Sprintf("%v/%v", savePath, info.Name())
@@ -177,10 +177,6 @@ func Add(w http.ResponseWriter, r *http.Request) {
 		} else if strings.HasSuffix(strings.ToLower(info.Name()), ".glb") {
 			entryFileName = fmt.Sprintf("%v/%v", savePath, info.Name())
 			meshType = Glb
-			break
-		} else if strings.HasSuffix(strings.ToLower(info.Name()), ".gltf") {
-			entryFileName = fmt.Sprintf("%v/%v", savePath, info.Name())
-			meshType = Gltf
 			break
 		} else if strings.HasSuffix(strings.ToLower(info.Name()), ".kmz") {
 			entryFileName = fmt.Sprintf("%v/%v", savePath, info.Name())

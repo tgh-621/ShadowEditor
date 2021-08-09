@@ -90,7 +90,7 @@ const PackageList = [{
     name: 'MD2Loader',
     assets: [
         'assets/js/loaders/MD2Loader.js',
-        'assets/js/MD2Character.js'
+        'assets/js/misc/MD2Character.js'
     ]
 }, {
     name: 'OBJLoader',
@@ -463,7 +463,7 @@ const PackageList = [{
 }, {
     name: 'SPE',
     assets: [
-        'assets/js/SPE.js'
+        'assets/js/libs/SPE.js'
     ]
 }, {
     name: 'VolumetricFire',
